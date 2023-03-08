@@ -1,0 +1,11 @@
+Configure IP addresses and gateway addresses for all PCs.
+
+There is 3 routers connected to a switch. The network id is 200.1.1.0
+Router0 ip:200.1.1.1, Router1 ip:200.1.1.2, Router3 ip:200.1.1.3
+
+Go to the router0 CLI, type "en", then go to config mode with "conf t".
+type "ip route (dest_network) (subnet_mask) (next_hop_ip). 
+//next_hop_ip is gateway that where the data from router to router, for example router0 to router1
+  router1's interface 200.1.1.2 is the next_hop_ip
+ after done setting up the network route, we can go to "en" mode type "show ip route" to check routing
+ nearby router will show *directly connected* to (nearby_network_ip)
