@@ -1,0 +1,5 @@
+After we have set all the IP addresses for the PCs and gateway addresses.
+we go to router that we want to set for dynamic route, for example router0
+go to router0's CLI enter the config mode, type "router rip", 
+then type"network (network_id_directly_connect_to_router)", if there is 3 directly connected network id,
+we have to type 3 times.
